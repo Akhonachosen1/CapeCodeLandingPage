@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cape Code Collective is a tech startup delivering cutting-edge AI solutions. Join us in shaping the future with intelligent tools and services." />
+  <title>Cape Code Collective - Innovative Tech Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cape Code Collective</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ai-services.html">AI Services</a>
+      <a href="investor.html">Investors</a>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <img src="https://source.unsplash.com/1600x400/?technology,futuristic" alt="Futuristic technology background"/>
+      <h2>Your Partner in Cutting-Edge Innovation</h2>
+      <p>We build AI-driven tools that help businesses grow faster.</p>
+    </div>
+    <section>
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Expert team with years of industry experience</li>
+        <li>Proven results in automation and analytics</li>
+        <li>Custom solutions tailored to your needs</li>
+      </ul>
+      <p>Contact us today to learn how we can transform your workflow.</p>
+    </section>
+  </main>
+  <div class="footer">&copy; 2024 Cape Code Collective</div>
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header" onclick="toggleChat()">Chat with us</div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Type your message"/>
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <button onclick="toggleChat()" style="position:fixed; bottom:20px; right:20px;">Chat</button>
+  <script src="chatbot.js"></script>
+</body>
+</html>

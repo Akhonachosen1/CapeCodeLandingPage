@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: #f0f0f0;
+}
+header {
+    background: linear-gradient(90deg, #002b50, #005d9d);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+section {
+    margin-top: 40px;
+}
+.footer {
+    background: #002b50;
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+}
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+}
+.chat-header {
+    background: #005d9d;
+    padding: 10px;
+    cursor: pointer;
+}
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    height: 200px;
+}
+.chat-input {
+    display: flex;
+    border-top: 1px solid #444;
+}
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+}
+.chat-input button {
+    padding: 10px;
+    background: #005d9d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
