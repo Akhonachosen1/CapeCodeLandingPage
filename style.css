@@ -1,48 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #005d9d;
+    --secondary: #002b50;
+    --light: #ffffff;
+    --dark: #0d0d0d;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #0d0d0d;
-    color: #f0f0f0;
+    background: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
 }
 header {
-    background: linear-gradient(90deg, #002b50, #005d9d);
-    padding: 20px;
-    text-align: center;
+    background: var(--secondary);
+    color: var(--light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
 nav a {
-    color: #fff;
-    margin: 0 10px;
+    color: var(--light);
     text-decoration: none;
+    font-weight: 600;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    color: var(--primary);
 }
+
 main {
-    padding: 20px;
+    padding: 20px 0;
 }
 .hero {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 20px;
 }
+
 .hero img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
 }
-section {
-    margin-top: 40px;
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 20px 0 10px;
 }
+
+.cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+section {
+    margin-top: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .footer {
-    background: #002b50;
+    background: var(--secondary);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #ccc;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    color: var(--primary);
 }
 .chat-container {
     position: fixed;
@@ -83,4 +161,16 @@ section {
     border: none;
     color: #fff;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+    nav li {
+        margin-left: 10px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
 }
